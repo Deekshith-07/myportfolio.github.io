@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block projects %}
+<div class="rightsideinfo">
+    <div class="navbar">
+        <ul>
+            <li><a href="mailto:deekshithpoojary355@gmail.com">Contact</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a class="active" href="/projects">Projects</a></li>
+            <li><a href="/">About</a></li>
+        </ul>
+    </div>
+    <div class="maindata">
+        <h2>Projects</h2>
+        <div class="rightseparator"></div>
+        <div class="projectinfo">
+            <h3>Muthoot - Home Finance</h3>
+            <p>
+                Implemented a cutting-edge automation solution to optimize the process of downloading and organizing a massive volume of bank statements in collaboration with Muthoot Home Finance. The project aimed to increase efficiency, reduce manual effort, and enhance data organization.<br>
+                 This project involved automating the retrieval of bank statements from the third-party desktop application, Kensoft's Home Finance Software (KEN-HFS). We ensured 24/7 continuous operation, even in the face of errors, with an efficient error handling system and notifications for prompt issue resolution. Our meticulous file organization structure stored statements in branch-specific folders, enhancing data management. By leveraging Robot Framework and Python, this initiative delivered substantial efficiency gains, reduced manual work, and contributed to cost savings.
+            </p>
+        </div>
+
+        <div class="projectinfo">
+            <h3>Muthoot - Forex</h3>
+            <p>
+                Implemented an automated solution for Muthoot Forex Department to verify and generate Excel reports for student transactions processed through the Flywire portal, ensuring accuracy and efficiency in record-keeping. <br><br>
+                Our project involved the creation of a highly efficient bot that ran every two hours, streamlining various tasks: <br>
+                1. Retrieving Daily SFTP Dumps: The bot fetched daily SFTP dumps from the server to gather transaction data. <br>
+                2. Continuous Email Monitoring: Throughout the day, the bot continuously monitored incoming emails from Yes Bank and Flywire, downloading reports and KYC documents as they arrived. <br>
+                3. Zip File Handling: Yes Bank e-collect reports arrived in password-protected zip files. The bot automatically extracted these zip files and converted the contained .xls files to .xlsx format. <br>
+                4. Report Comparison: After extracting and converting the reports, the bot merged all Yes Bank e-collect reports into a single Excel file for easy comparison. This same process applied to SFTP reports. <br>
+                5. Identifying Successful Transactions: The bot meticulously compared both reports and generated a new Excel file containing successful transactions. In cases where a customer made multiple transactions, the bot marked them as pending and highlighted them for easy identification. <br>
+                6. KYC Document Verification: The bot organized previously downloaded KYC documents based on payment ID and checked for the presence of all four required documents. If any were missing, the bot generated an email listing the missing documents and their corresponding payment ID. <br>
+                7. Automated Reporting: Once all tasks were completed, the bot automatically generated a comprehensive report and sent it via email. <br>
+            </p>
+        </div>
+        <div class="nextpage">
+            <button>next</button>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

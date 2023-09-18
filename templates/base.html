@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='icons8-portfolio-64.png') }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/mail.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/phone.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/calendar.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/pin.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/briefcase.css' rel='stylesheet'>
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="container">
+        <div class="leftsideinfo">
+            <div class="profilepic">
+                <img src="{{ url_for('static', filename='dp1.jpg') }}" alt="profilepic" width="250" height="200">
+                <h2>Deekshith</h2>
+                <h4>Jr. Testing Engineer</h3>
+            </div>
+            <div class="separator"></div>
+            <br>
+            <div class="personalinfo">
+                <div class="info">
+                    <div class="logo"><i class="gg-mail"></i></div>
+                    <div class ="data">deekshithpoojary355@gmail.com</div>
+                </div>
+                <br>
+                <div class="info">
+                    <div class="logo"><i class="gg-calendar"></i></div>
+                    <div class ="data">August 28, 1998</div>
+                </div>
+                <br>
+                <div class="info">
+                    <div class="logo"><i class="gg-pin"></i></div>
+                    <div class ="data"><a href="https://www.google.com/maps/place/Bengaluru,+Karnataka/@12.9542802,77.4661253,11z/data=!3m1!4b1!4m6!3m5!1s0x3bae1670c9b44e6d:0xf8dfc3e8517e4fe0!8m2!3d12.9715987!4d77.5945627!16zL20vMDljMTc?entry=ttu" target="_blank">Bangalore</a></div>
+                </div>
+                <br>
+                <div class="info">
+                    <div class="logo"><i class="gg-phone"></i></div>
+                    <div class ="data">+91 9482408568</div>
+                </div>
+                <br>
+                <div class="info">
+                    <div class="logo"><i class="gg-briefcase"></i></div>
+                    <div class ="data"><a href="https://www.linkedin.com/in/deekshith-poojary-3483851b5" target="_blank">LinkedIn</a></div>
+                </div>
+
+            </div>
+        </div>
+
+        {% block rightside %}
+
+        {% endblock %}
+
+        {% block projects %}
+
+        {% endblock %}
+
+    </div>
+
+</body>
+</html>
+
+

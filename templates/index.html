@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+{% block rightside %}
+<div class="rightsideinfo">
+    <div class="navbar">
+        <ul>
+            <li><a href="mailto:deekshithpoojary355@gmail.com">Contact</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a class="active" href="/">About</a></li>
+        </ul>
+    </div>
+    <div class="maindata">
+        <h2>About Me</h2>
+        <div class="rightseparator"></div>
+        <p style="margin-left: 1em;">Greetings! I'm Deekshith, an automation enthusiast with a passion for streamlining processes and enhancing efficiency. My expertise lies in Robotic Process Automation (RPA) using Python and Robot Framework.
+            I've successfully automated repetitive tasks, delivering significant time and cost savings.<br><br>From data extraction to workflow automation, I've harnessed the power of technology to drive productivity.
+            Collaboration is at the heart of my approach. I thrive in cross-functional teams, where I identify opportunities for automation and implement solutions that benefit all stakeholders.
+            As an advocate for continuous learning, I stay updated with the latest automation tools and techniques to remain at the forefront of this dynamic field.
+        </p>
+
+        <h2>Skills</h2>
+        <div class="rightseparator"></div>
+        <br>
+        <div class="skills">
+            <div class="listofskills">
+                <div class="skilldata">
+                    <div class="skilllogo">
+                        <img width="25" height="25" src="https://img.icons8.com/ios/50/gears--v1.png" alt="gears--v1"/>
+                    </div>
+                    <h5><a href="https://en.wikipedia.org/wiki/Robotic_process_automation" target="_blank">Process Automation</a></h5>
+                    <p> Expertise in automating diverse tasks, ranging from simple and repetitive to complex and intricate</p>
+                </div>
+
+                <div class="skilldata">
+                    <div class="skilllogo">
+                        <img width="25" height="25" src="https://img.icons8.com/ios/50/python--v1.png" style="background-color: rgb(255, 200, 0);" alt="python--v1"/>
+                    </div>
+                    <h5><a href="https://en.wikipedia.org/wiki/Python_(programming_language)" target="_blank">Python</a></h5>
+                    <p>Strong Python scripting skills to handle complex automation challenges and extend automation capabilities</p>
+                </div>
+
+                <div class="skilldata">
+                    <div class="skilllogo">
+                        <img width="25" height="25" src="{{ url_for('static', filename='robotframework.256x256.png') }}" alt="robotframework"/>
+                    </div>
+                    <h5><a href="https://en.wikipedia.org/wiki/Robot_Framework" target="_blank">Robotframework</a></h5>
+                    <p>Proficiency in using Robot Framework to automate test cases, scripts, and workflows efficiently</p>
+                </div>
+
+                <div class="skilldata" style="margin-top: 1em;">
+                    <div class="skilllogo">
+                        <img width="25" height="25" src="https://img.icons8.com/pastel-glyph/64/code--v2.png" alt="code--v1"/>
+                    </div>
+                    <h5>Script Development</h5>
+                    <p>Skilled in developing automation scripts and maintaining automation frameworks for optimal performance</p>
+                </div>
+
+                <div class="skilldata" style="margin-top: 1em;">
+                    <div class="skilllogo">
+                        <img width="25" height="25" src="https://img.icons8.com/external-ddara-lineal-ddara/64/external-problem-solving-managements-ddara-lineal-ddara-1.png" alt="external-problem-solving-managements-ddara-lineal-ddara-1"/>
+                    </div>
+                    <h5>Problem Solving</h5>
+                    <p>Strong problem-solving abilities to identify automation opportunities and resolve issues in processes</p>
+                </div>
+
+                <div class="skilldata" style="margin-top: 1em;">
+                    <div class="skilllogo">
+                        <img width="25" height="25" src="https://img.icons8.com/external-outline-design-circle/66/external-Continuous-Improvement-productivity-outline-design-circle.png" alt="external-Continuous-Improvement-productivity-outline-design-circle"/>
+                    </div>
+                    <h5>Continuous Improvement</h5>
+                    <p>Commitment to continuously improving automation processes and seeking innovative solutions to enhance efficiency</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

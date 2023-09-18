@@ -1,0 +1,228 @@
+/* General */
+body{
+    background-color: black;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    /* border: 1px solid black; */
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 35px;
+    height: 96vh;
+}
+
+.leftsideinfo {
+    width: 20%;
+    background:  hsla(0, 1%, 17%, 0.711);
+    padding: .4em;
+    border-radius: 15px;
+    margin-left: 18px;
+    margin-top: 17px;
+}
+
+.rightsideinfo {
+    width: 74.6%;
+    background:  hsla(0, 1%, 17%, 0.711);
+    padding: .4em;
+    border-radius: 15px;
+    margin-left: -10px;
+    margin-top: 17px;
+}
+
+/* Left side */
+.profilepic img {
+    margin-top: 30px;
+    border-radius: 25%;
+    margin-left: 8%;
+}
+
+.profilepic h4{
+    color: white;
+    width: 170px;
+    text-align: center;
+    margin-left: 62px;
+    font-family: ink free;
+    border: 1px solid hsla(0, 1%, 17%, 0.9);
+    background-color: hsl(0deg 2.39% 23.69% / 90%);
+    border-radius: 5px;
+}
+
+.profilepic h2{
+    color: white;
+    text-align: center;
+    font-family: ink free;
+}
+
+.separator {
+    border-top: 0.5px solid #525252;
+    width: 250px;
+    margin-left: 30px;
+}
+
+.info{
+    display: flex;
+    gap: 30px;
+    margin-left: 8px;
+}
+
+.logo{
+    color: rgb(255, 200, 0);
+    margin-top: 0.2em;
+}
+
+.data {
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    color: rgb(255, 255, 255);
+    font-size: medium;
+}
+
+/* Right side - Nav bar */
+.navbar {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.588), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    text-align: right; /* Align the text to the right */
+    border-radius: 10px;
+    width: fit-content;
+    float:right
+  }
+
+  li {
+    float: right; /* Float the list items to the right */
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+  }
+
+  li a:hover:not(.active) {
+    background-color: #404040;
+    color:  #cacaca;
+  }
+
+  .active {
+    color: orange;
+  }
+
+/* Right side - About Me */
+.maindata {
+    color: white;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+.maindata h2 {
+    margin-top: 1.5em;
+    margin-left: 1em;
+}
+
+.skills h2 {
+    margin-left: 1em;
+}
+
+.rightseparator {
+    border: 1.5px solid orange;
+    height: 0.5px;
+    background-color: orange;
+    border-radius: 5px;
+    width: 150px;
+}
+
+.listofskills {
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    /* width: fit-content; */
+}
+
+.skilldata h5{
+    font-size: medium;
+    margin-left: 1.2em;
+    margin-bottom: 5px;
+    margin-top: -0.1em;
+}
+
+.skilldata p{
+    font-size: small;
+    margin-left: 3.9em;
+    margin-top: -8px;
+    color:#b1b1b1;
+}
+
+.skilldata {
+    width: 350px;
+    border-radius: 15px;
+    background-color: #333333;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.588), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: 1em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.skilllogo {
+    margin-top: 1em;
+    margin-left: 0.5em;
+}
+
+.skilldata:hover {
+    /* box-shadow: rgb(255, 123, 0) 0px 16px 10px -10px; */
+    box-shadow: 0 4px 8px 0 rgba(255, 120, 1, 0.718), inset -17px -20px 20px 20px rgba(0, 0, 0, 0.19);
+}
+
+/*Right side - Projects */
+.projectinfo {
+    background-color: #333333;
+    border-radius: 10px;
+    margin-left: 1em;
+    width: 68.8em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.684), inset -17px -20px 20px 20px rgba(0, 0, 0, 0.19);
+    padding-bottom: 0.1px;
+}
+
+
+.projectinfo h3 {
+    margin-left: 1em;
+}
+
+.projectinfo p {
+    margin-top: -1em;
+    margin-left: 1em;
+    font-size: small;
+    color: #b1b1b1;
+}
+
+.nextpage button {
+    margin-top: 10px;
+    margin-left: 79.4em;
+    background-color: #333333;
+    border-radius: 5px;
+    color: #b1b1b1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+    width: 60px;
+    text-align: center;
+    font-family: cursive;
+}
+
+.nextpage button:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), inset -17px -20px 20px 20px rgba(0, 0, 0, 0.477);
+}
